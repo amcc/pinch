@@ -34,7 +34,7 @@ function getCameraStream() {
         vidHeight = video.height;
         myCanvas = createCanvas(
           windowWidth,
-          (windowWidth * vidHeight) / vidWidth
+          (windowWidth * vidHeight) / vidWidth,
         );
         myCanvas.parent("canvas-parent");
         let containerEl = document.getElementById("video-parent");
@@ -154,7 +154,7 @@ function drawKeypoints() {
       circle(
         (keypoint[0] * width) / vidWidth,
         (keypoint[1] * height) / vidHeight,
-        10
+        10,
       );
       pop();
     }
